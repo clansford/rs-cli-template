@@ -16,9 +16,9 @@ struct Cli {
     command: Option<Commands>,
 }
 
+//All commands that come after cli tool name
 #[derive(Subcommand, Debug, PartialEq)]
 enum Commands {
-    // clap data
     #[clap(
         alias = "c1",
         about = "command1 about",
